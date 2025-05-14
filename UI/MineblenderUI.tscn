@@ -1,0 +1,171 @@
+[gd_scene format=3 uid="uid://oudliekgm2wd"]
+
+[node name="MineblenderUI" type="Control"]
+layout_mode = 3
+anchors_preset = 15
+anchor_right = 1.0
+anchor_bottom = 1.0
+grow_horizontal = 2
+grow_vertical = 2
+
+[node name="Background" type="Panel" parent="."]
+layout_mode = 1
+anchors_preset = 15
+anchor_right = 1.0
+anchor_bottom = 1.0
+grow_horizontal = 2
+grow_vertical = 2
+
+[node name="Header" type="Panel" parent="."]
+layout_mode = 1
+anchors_preset = -1
+anchor_right = 1.0
+offset_bottom = 56.0
+
+[node name="MenuButton" type="MenuButton" parent="Header"]
+layout_mode = 0
+offset_left = 8.0
+offset_top = 8.0
+offset_right = 80.0
+offset_bottom = 50.0
+theme_override_font_sizes/font_size = 24
+text = "File"
+switch_on_hover = true
+item_count = 10
+popup/item_0/text = "New Project"
+popup/item_0/id = 0
+popup/item_1/text = "Open Project"
+popup/item_1/id = 1
+popup/item_2/text = "Open Recent"
+popup/item_2/id = 2
+popup/item_3/text = "Recover Last Backup"
+popup/item_3/id = 3
+popup/item_4/id = 4
+popup/item_4/separator = true
+popup/item_5/text = "Save Project"
+popup/item_5/id = 5
+popup/item_6/text = "Save Project As"
+popup/item_6/id = 6
+popup/item_7/id = 7
+popup/item_7/separator = true
+popup/item_8/text = "Import Asset"
+popup/item_8/id = 8
+popup/item_9/text = "Import From World"
+popup/item_9/id = 9
+
+[node name="MenuButton2" type="MenuButton" parent="Header"]
+layout_mode = 0
+offset_left = 88.0
+offset_top = 8.0
+offset_right = 168.0
+offset_bottom = 50.0
+theme_override_font_sizes/font_size = 24
+text = "Edit"
+switch_on_hover = true
+
+[node name="MenuButton3" type="MenuButton" parent="Header"]
+layout_mode = 0
+offset_left = 176.0
+offset_top = 8.0
+offset_right = 296.0
+offset_bottom = 50.0
+theme_override_font_sizes/font_size = 24
+text = "Render"
+switch_on_hover = true
+item_count = 5
+popup/item_0/text = "Render Image"
+popup/item_0/id = 0
+popup/item_1/text = "Render Image (Camera)"
+popup/item_1/id = 1
+popup/item_2/id = 2
+popup/item_2/separator = true
+popup/item_3/text = "Render Video"
+popup/item_3/id = 3
+popup/item_4/text = "Render Video (Camera)"
+popup/item_4/id = 4
+
+[node name="MenuButton4" type="MenuButton" parent="Header"]
+layout_mode = 0
+offset_left = 304.0
+offset_top = 8.0
+offset_right = 400.0
+offset_bottom = 50.0
+theme_override_font_sizes/font_size = 24
+text = "View"
+switch_on_hover = true
+
+[node name="MenuButton5" type="MenuButton" parent="Header"]
+layout_mode = 0
+offset_left = 408.0
+offset_top = 8.0
+offset_right = 496.0
+offset_bottom = 50.0
+theme_override_font_sizes/font_size = 24
+text = "Help"
+switch_on_hover = true
+item_count = 2
+popup/item_0/text = "About Mineblender"
+popup/item_0/id = 0
+popup/item_1/text = "Tutorials"
+popup/item_1/id = 1
+
+[node name="SubViewportContainer" type="SubViewportContainer" parent="."]
+layout_mode = 0
+offset_top = 56.0
+offset_right = 1152.0
+offset_bottom = 648.0
+stretch = true
+
+[node name="SubViewport" type="SubViewport" parent="SubViewportContainer"]
+handle_input_locally = false
+size = Vector2i(1152, 592)
+render_target_update_mode = 4
+
+[node name="FileStructure" type="Panel" parent="."]
+layout_mode = 1
+anchors_preset = 2
+anchor_top = 1.0
+anchor_bottom = 1.0
+offset_left = 8.0
+offset_top = -328.0
+offset_right = 192.0
+offset_bottom = -8.0
+grow_vertical = 0
+
+[node name="Console" type="Panel" parent="."]
+layout_mode = 1
+anchors_preset = -1
+anchor_left = 0.174
+anchor_top = 1.0
+anchor_right = 0.826
+anchor_bottom = 1.0
+offset_left = -0.448013
+offset_top = -136.0
+offset_right = 0.447937
+offset_bottom = -8.0
+grow_horizontal = 2
+grow_vertical = 0
+
+[node name="EditProperties" type="Panel" parent="."]
+layout_mode = 1
+anchors_preset = -1
+anchor_left = 1.0
+anchor_top = 1.0
+anchor_right = 1.0
+anchor_bottom = 1.0
+offset_left = -192.0
+offset_top = -328.0
+offset_right = -8.0
+offset_bottom = -8.0
+
+[node name="QuickAccess" type="Panel" parent="."]
+layout_mode = 1
+anchors_preset = -1
+anchor_left = 1.0
+anchor_top = 0.086
+anchor_right = 1.0
+anchor_bottom = 0.086
+offset_left = -64.0
+offset_top = 8.272
+offset_right = -8.0
+offset_bottom = 256.272

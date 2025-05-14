@@ -1,0 +1,28 @@
+; Engine configuration file.
+; It's best edited using the editor UI and not directly,
+; since the parameters that go here are not all obvious.
+;
+; Format:
+;   [section] ; section goes between []
+;   param=value ; assign values to parameters
+
+config_version=5
+
+[application]
+
+config/name="Mineblender"
+run/main_scene="uid://oudliekgm2wd"
+config/features=PackedStringArray("4.5", "Forward Plus")
+boot_splash/show_image=false
+boot_splash/fullsize=false
+boot_splash/use_filter=false
+
+[autoload]
+
+ANIMA="*res://addons/anima/core/constants.gd"
+ScreenEffects="*res://addons/screen_effects/scripts/effects_handler.gd"
+Console="*res://Global Scripts/console.gd"
+
+[editor_plugins]
+
+enabled=PackedStringArray("res://addons/console/plugin.cfg", "res://addons/rakugo-nodes/plugin.cfg")
